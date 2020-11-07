@@ -10,6 +10,7 @@ RUN apk add git make &&\
 FROM alpine
 WORKDIR /
 COPY --from=builder /trojan-go/build /usr/local/bin/
+RUN mkdir /etc/trojan-go
 
 EXPOSE 3000
 
