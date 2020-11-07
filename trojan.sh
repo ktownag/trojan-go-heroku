@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # config trojan
+mkdir /etc/trojan-go
 cat << EOF > /etc/trojan-go/config.json
 {
     "password": [
